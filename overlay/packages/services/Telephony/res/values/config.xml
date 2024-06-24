@@ -19,15 +19,15 @@
 <!-- Phone app resources that may need to be customized
      for different hardware or product builds. -->
 <resources>
-    <!-- Determine whether we should show the "listen for instructions" screen after
-         successfully placing the OTA call -->
-    <integer name="OtaShowListeningScreen">1</integer>
 
     <!-- Flag indicating if the phone is a world phone -->
     <bool name="world_phone">true</bool>
 
     <!-- Flag indicating if dtmf tone type is enabled -->
     <bool name="dtmf_type_enabled">true</bool>
+
+    <!-- Flag indicating if hac is enabled -->
+    <bool name="hac_enabled">true</bool>
 
     <!-- Determine whether calls to mute the microphone in PhoneUtils
          are routed through the android.media.AudioManager class (true) or through
@@ -38,6 +38,7 @@
          able to prevent manual operator selection. If false, this SIM setting will be
          ignored and manual operator selection will always be available. See
          CPHS4_2.WW6, CPHS B.4.7.1 for more information -->
+    <!-- DEPRECATED: Use CarrierConfigManager#KEY_CSP_ENABLED_BOOL -->
     <bool name="csp_enabled">true</bool>
 
     <!-- Show Preferred Network Type options in No SIM case -->
@@ -47,5 +48,8 @@
     <string name="config_ims_mmtel_package" translatable="false">org.codeaurora.ims</string>
 
     <!-- String indicating the package name of the device ImsService implementation for RCS. -->
-    <string name="config_ims_rcs_package" translatable="false">org.codeaurora.ims</string>
+    <string name="config_ims_rcs_package" translatable="false">vendor.qti.imsrcs</string>
+
+    <!-- Package name for the call-based number verification app -->
+    <string name="platform_number_verification_package" translatable="false">com.google.android.gms</string>
 </resources>

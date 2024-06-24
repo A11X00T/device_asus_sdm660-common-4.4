@@ -77,9 +77,13 @@ vendor.audio.tunnel.encode=false
 vendor.voice.path.for.pcm.voip=false
 
 # Bluetooth
-persist.vendor.service.bdroid.sibs=false
 persist.vendor.bt.aac_frm_ctl.enabled=true
 vendor.qcom.bluetooth.soc=cherokee
+persist.vendor.qcom.bluetooth.soc=cherokee
+persist.vendor.qcom.bluetooth.scram.enabled=false
+persist.vendor.qcom.bluetooth.enable.splita2dp=true
+ro.vendor.bluetooth.wipower=false
+persist.vendor.bluetooth.modem_nv_support=true
 
 # Camera
 persist.vendor.camera.eis.enable=1
@@ -100,6 +104,8 @@ debug.sf.hw=1
 persist.hwc.mdpcomp.enable=true
 ro.opengles.version=196610
 vendor.display.disable_rotator_downscale=1
+ro.hardware.egl=adreno
+ro.hardware.vulkan=adreno
 
 # DRM
 drm.service.enabled=true
