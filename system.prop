@@ -2,6 +2,17 @@
 # system.prop for sdm660
 #
 
+# Audio
+audio.sys.noisy.broadcast.delay=600
+audio.sys.offload.pstimeout.secs=3
+audio.safemedia.bypass=true
+audio.offload.min.duration.secs=30
+persist.vendor.audio.hac.enable=false
+persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
+ro.config.media_vol_steps=25
+ro.config.vc_call_vol_steps=14
+ro.config.alarm_vol_steps=25
+
 # Bluetooth
 bt.max.hfpclient.connections=1
 vendor.bluetooth.soc=cherokee
