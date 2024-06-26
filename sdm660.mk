@@ -33,7 +33,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
-    audio.primary.sdm660 \
+    audio.primary.sdm660:32 \
+    sound_trigger.primary.sdm660:32 \
     audio.r_submix.default \
     audio.usb.default \
     libaudio-resampler \
