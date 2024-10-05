@@ -83,10 +83,12 @@
             <name>IDrmFactory</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.0::ICryptoFactory/default</fqname>
+        <fqname>@1.0::IDrmFactory/default</fqname>
         <fqname>@1.3::ICryptoFactory/clearkey</fqname>
+        <fqname>@1.3::ICryptoFactory/widevine</fqname>
         <fqname>@1.3::IDrmFactory/clearkey</fqname>
-        <fqname>@1.2::ICryptoFactory/widevine</fqname>
-        <fqname>@1.2::IDrmFactory/widevine</fqname>
+        <fqname>@1.3::IDrmFactory/widevine</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.gatekeeper</name>
@@ -389,7 +391,6 @@
             <name>IFstManager</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IFstManager/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.perf</name>
@@ -547,7 +548,6 @@
             <name>IImsFactory</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IImsFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.imsrtpservice</name>
