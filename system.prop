@@ -30,6 +30,12 @@ persist.data.df.dev_name=rmnet_usb0
 persist.vendor.data.mode=concurrent
 ro.vendor.use_data_netmgrd=true
 
+# Dirac
+persist.dirac.acs.controller=qem
+persist.dirac.acs.storeSettings=1
+persist.dirac.acs.ignore_error=1
+ro.audio.soundfx.dirac=true
+
 # Display - Blur
 persist.sys.sf.disable_blurs=1
 ro.surface_flinger.supports_background_blur=1
