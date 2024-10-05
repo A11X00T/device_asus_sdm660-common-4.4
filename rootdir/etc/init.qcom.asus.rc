@@ -56,9 +56,17 @@ on boot
     chmod 0660 /sys/module/msm_performance/parameters/touchboost
 
 on boot
-    # Tap to wake node
-    chown system system /proc/tpd_gesture
-    chmod 0660 /proc/tpd_gesture
+    # Permissions for double tap
+    chown system system /proc/touchpanel/double_tap_enable
+
+    # Permissions for gestures
+    chown system system /proc/touchpanel/letter_c_enable
+    chown system system /proc/touchpanel/letter_e_enable
+    chown system system /proc/touchpanel/letter_s_enable
+    chown system system /proc/touchpanel/letter_v_enable
+    chown system system /proc/touchpanel/letter_w_enable
+    chown system system /proc/touchpanel/letter_z_enable
+    chown system system /proc/touchpanel/up_swipe_enable
 
 service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.1-service
     override

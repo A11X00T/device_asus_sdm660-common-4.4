@@ -18,21 +18,17 @@
 
 #include <android-base/logging.h>
 #include <hidl/HidlTransportSupport.h>
-
 #include "TouchscreenGesture.h"
-
-using ::android::OK;
-using ::android::sp;
 
 using ::vendor::lineage::touch::V1_0::ITouchscreenGesture;
 using ::vendor::lineage::touch::V1_0::implementation::TouchscreenGesture;
 
 int main() {
-    sp<ITouchscreenGesture> gestureService = new TouchscreenGesture();
+    android::sp<ITouchscreenGesture> gestureService = new TouchscreenGesture();
 
     android::hardware::configureRpcThreadpool(1, true /*callerWillJoin*/);
 
-    if (gestureService->registerAsService() != OK) {
+    if (gestureService->registerAsService() != android::OK) {
         LOG(ERROR) << "Cannot register touchscreen gesture HAL service.";
         return 1;
     }
@@ -40,7 +36,7 @@ int main() {
     LOG(INFO) << "Touchscreen HAL service ready.";
 
     android::hardware::joinRpcThreadpool();
-
+    
     LOG(ERROR) << "Touchscreen HAL service failed to join thread pool.";
     return 1;
 }
