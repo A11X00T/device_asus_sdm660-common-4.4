@@ -55,6 +55,12 @@ persist.demo.hdmirotationlock=false
 persist.hwc.enable_vds=1
 sdm.debug.disable_skip_validate=1
 
+# Havoc-OS
+ro.havoc.device.name=Zenfone Max Pro M1
+ro.havoc.group.url=https://t.me/ikwfahmi
+ro.havoc.maintainer=Kyura
+ro.havoc.maintainer.username=Kyura
+
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 media.stagefright.thumbnail.prefer_hw_codecs=true
